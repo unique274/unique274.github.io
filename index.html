@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/website/indexStyle.css">
+    <!-- <link rel="stylesheet" href="indexStyle.css"> -->
+</head>
+<body>
+  <div class="top-header" id="navbar">
+    <div class="headbar-logo">
+        <a href="#">INOVUS LABS</a>
+    </div>
+    <div class="topnav">
+        <a class="active" href="#home">HOME</a>
+        <a href="#about-nav">ABOUT</a>
+       
+        <a href="#gallery-nav">GALLERY</a>
+        <a href="#contact-nav">CONTACT</a>
+    </div>
+  </div>
+
+  
+  <div class="intro" id="home">
+    <h4>
+      WE ARE THE TEAM INOVUS
+    </h4>
+        
+    <div class="text1">
+      <div class="intro-text">
+        <span>
+          IEDC by Kerala Start-Up Mission at<br> 
+          Kristu Jyoti College of Management and Technology<br>
+            to develop an entrepreneurship culture within the college.<br>
+        </span>
+      </div>
+      <div class="getstarted-btn">
+        <a href="#about-nav" class="button">GET STARTED</a>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="aboutus" id="about-nav" >
+  <h4> ABOUT US </h4>
+  <p>
+    'Inovus Labs'​ is a Student Community at Kristu Jyoti College of Management and Technology.<BR>It was later recognized as an Innovation and Entrepreneur Development Centre (IEDC) by Kerala Start-up Mission in the year 2015.<br>
+
+  Inovus Labs is a Start-up incubation Centre for nurturing the spirit of Entrepreneurship and Innovative thinking of its fellows.<br> We are the first of its kind at an Arts & Science College.<br> We are funded for our innovative start-ups by Kerala Start-up Mission.<br> Amazon Web Services, KASPEROB, Mozilla, Github, and Internshala collaborate with us to achieve our goals.<br> Technical Support for all the programs conducted in the college are provided by us.<br>
+
+  'Come & Explore your !deas @ Inovus Labs'​<br>
+  <img class="about-img" src="about.jpg">
+    </p>
+  </div>
+
+<div class="gallery" id="gallery-nav">
+  <br>
+  <br>
+  <h4>GALLERY</h4>
+  <iframe width="700" height="500" src="https://www.youtube.com/embed/RAkqkJNXi9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br>
+ <iframe width="700" height="500" src="https://www.youtube.com/embed/u9BTrc6KbOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="contactusmain">
+  <h4 >CONTACT</h4>
+  <p class="Contact-title" id="contact-nav">Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
+  <div class="container">
+    <form action="action_page.php">
+  
+      <input type="text" id="fname" name="firstname" placeholder="Your name.."> <br>
+  
+      <input type="text" id="lname" name="lastname" placeholder="Email.."> <br>
+  
+      <!-- <label for="country">Country: </label>
+        <select class="custom-select" id="country" name="country">
+          <option value="australia">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">Australia</option>
+          <option value="usa">USA</option>
+          <option value="usa">UAE</option>
+          <option value="usa">Africa</option>
+          <option value="usa">China</option>
+          <option value="usa">Russia</option>
+        </select> <br> -->
+  
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> <br>
+  
+        <input type="button" class="button" value="Submit">
+  
+    </form>
+  </div>
+</div>
+<div class="socialnet">
+      <a href="https://www.facebook.com/inovuslabs" target="_blank"><img class="social-img" src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-facebook-512.png"></a>
+      <a href="https://twitter.com/InovusLabs" target="_blank"><img class="social-img" src="https://image.flaticon.com/icons/png/512/23/23931.png"></a>
+      <a href="https://www.instagram.com/inovuslabs/" target="_blank"><img class="social-img" src="https://www.pikpng.com/pngl/m/487-4874277_twitter-logo-facebook-logo-instagram-logo-transparent-social.png"></a>
+
+</div>
+<div class="footer">
+  <p>© 2021 inovus Website Demo. Designed by Christy Thomas </p>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</body>
+</html>
